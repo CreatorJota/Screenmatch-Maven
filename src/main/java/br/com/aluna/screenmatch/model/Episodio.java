@@ -18,6 +18,7 @@ public class Episodio {
     private Double avaliacao;
     private LocalDate dataLancamento;
     @ManyToOne
+    @JoinColumn(name = "serie_id")
     private Serie serie;
 
     public Episodio(){}
